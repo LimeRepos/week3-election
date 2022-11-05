@@ -1,3 +1,11 @@
+# The update
+
+It all looks like this
+
+![img](./1.png)
+
+Now, to locally run this monster please add your own API key on constants/index.ts
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmirshko%2Fnext-web3-boilerplate)
 
 This is a default [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), customized as the default boilerplate for new Web3 projects.
@@ -15,7 +23,7 @@ This is a default [Next.js](https://nextjs.org/) project bootstrapped with [`cre
 
 **Note**: After adding in your new contract ABIs (in JSON format) to the `/contracts` folder, run `yarn compile-contract-types` to generate the types.
 
-You can import these types when declaring a new Contract hook. The types generated show the function params and return types of your functions, among other helpful types. 
+You can import these types when declaring a new Contract hook. The types generated show the function params and return types of your functions, among other helpful types.
 
 ```ts
 import MY_CONTRACT_ABI from "../contracts/MY_CONTRACT.json";
