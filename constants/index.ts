@@ -4,12 +4,10 @@
   }
   export const walletConnectSupportedNetworks: Networks = {
     // Add your network rpc URL here
-    1: "https://ethereumnode.defiterm.io",
-    3: "https://ethereumnode.defiterm-dev.net"
+    5: "https://goerli.infura.io/v3/YOUR-API-KEY"
   };
 
   // Network chain ids
-  export const supportedMetamaskNetworks = [1, 3, 4, 5, 42];
+  export const supportedMetamaskNetworks = [5];
 
-  export const ALBT_TOKEN_ADDRESS = "0xc6869a93ef55e1d8ec8fdcda89c9d93616cf0a72";
-  export const US_ELECTION_ADDRESS = "0xA09fF4F39FD8553051ABf0188100b7C5A6dc5452";
+  export const LIBRARY_ADDRESS = "0xD771d3De0B4A8C55B32c88422c67aeA783f53760";

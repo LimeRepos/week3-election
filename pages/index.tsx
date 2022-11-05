@@ -5,7 +5,7 @@ import Account from "../components/Account";
 import NativeCurrencyBalance from "../components/NativeCurrencyBalance";
 import TokenBalance from "../components/TokenBalance";
 import USLibrary from "../components/USLibrary";
-import { ALBT_TOKEN_ADDRESS, US_ELECTION_ADDRESS } from "../constants";
+import {LIBRARY_ADDRESS } from "../constants";
 import useEagerConnect from "../hooks/useEagerConnect";
 
 function Home() {
@@ -18,14 +18,14 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>LimeAcademy-boilerplate</title>
+        <title>Library</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header>
         <nav>
           <Link href="/">
-            <a>LimeAcademy-boilerplate</a>
+            <a>Library</a>
           </Link>
 
           <Account triedToEagerConnect={triedToEagerConnect} />
@@ -34,18 +34,13 @@ function Home() {
 
       <main>
         <h1>
-          Welcome to{" "}
-          <a href="https://github.com/LimeChain/next-web3-boilerplate">
-            LimeAcademy-boilerplate
-          </a>
+          The Ultimate Blockchain Library
         </h1>
 
         {isConnected && (
           <section>
             <NativeCurrencyBalance />
-
-            <TokenBalance tokenAddress={ALBT_TOKEN_ADDRESS} symbol="ALBT" />
-            <USLibrary contractAddress={US_ELECTION_ADDRESS} />
+            <USLibrary contractAddress={LIBRARY_ADDRESS} account={account} />
           </section>
         )}
       </main>
